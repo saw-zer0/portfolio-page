@@ -1,0 +1,12 @@
+@import '../abstracts/variables';
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .header__logo{
+        margin: 1em;
+    }
+}
