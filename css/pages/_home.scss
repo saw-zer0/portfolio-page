@@ -1,3 +1,6 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
 .home {
     background-color: $black;
     color: $light;
@@ -9,6 +12,7 @@
     @include tablet{
         height: 700px;
     }
+
 
     header{
 

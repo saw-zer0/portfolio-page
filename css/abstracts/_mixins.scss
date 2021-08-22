@@ -24,3 +24,9 @@
         @content;
     }
 }
+
+@mixin big-screen {
+    @media screen and (min-width: $big-screen) {
+        @content;
+    }
+}
