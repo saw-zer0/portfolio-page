@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>MeetSanil</title>
+    <script src="./js/index.js" defer></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
                     <img src="./assets/logo.png" alt="logo">
                 </div>
 
-                <i class="header__hamburger-menu fas fa-bars">
+                <i class="header__hamburger-menu fas fa-bars" id="hamburger">
                 </i>
 
             </div>
@@ -180,7 +181,7 @@
             </div>
             <div class="about--right">
                 <figure>
-                    <img src="./assets/" alt="about__hero-image">
+                    <img src="./assets/hero_image.jpg" alt="about__hero-image">
                 </figure>
             </div>
     
@@ -194,7 +195,7 @@
             <section class="technical-skill__container">
                 <div class="skill-wrapper">
                     <figure>
-                        <img src="" alt="python">
+                        <img src="./assets/python-logo.png" alt="python">
                     </figure>
     
                     <figcaption>Python</figcaption>
@@ -202,14 +203,14 @@
     
                 <div class="skill-wrapper">
                     <figure>
-                        <img src="" alt="django">
+                        <img src="./assets/django-logo.png" alt="django">
                     </figure>
     
                     <figcaption>Django</figcaption>
                 </div>
                 <div class="skill-wrapper">
                     <figure>
-                        <img src="" alt="javascript">
+                        <img src="./assets/js-logo.png" alt="javascript">
                     </figure>
     
                     <figcaption>Javascript</figcaption>
@@ -217,7 +218,7 @@
     
                 <div class="skill-wrapper">
                     <figure>
-                        <img src="" alt="node js">
+                        <img src="./assets/node-logo.png" alt="node js">
                     </figure>
     
                     <figcaption>Node.js</figcaption>
@@ -225,7 +226,7 @@
     
                 <div class="skill-wrapper">
                     <figure>
-                        <img src="" alt="react">
+                        <img src="./assets/react-logo.png" alt="react">
                     </figure>
     
                     <figcaption>React</figcaption>
@@ -233,7 +234,7 @@
     
                 <div class="skill-wrapper">
                     <figure>
-                        <img src="" alt="d3.js">
+                        <img src="./assets/d3-logo.png" alt="d3.js">
                     </figure>
     
                     <figcaption>D3.js</figcaption>
@@ -241,7 +242,7 @@
     
                 <div class="skill-wrapper">
                     <figure>
-                        <img src="" alt="sql">
+                        <img src="./assets/sql-logo.png" alt="sql">
                     </figure>
     
                     <figcaption>SQL</figcaption>
@@ -249,7 +250,7 @@
     
                 <div class="skill-wrapper">
                     <figure>
-                        <img src="" alt="mongo db">
+                        <img src="./assets/mongodb-logo.png" alt="mongo db">
                     </figure>
     
                     <figcaption>Mongo db</figcaption>
@@ -295,6 +296,11 @@
             </section>
     
         </div>
+
+        <div class="expirience">
+
+        </div>
+    
     
     </div>
 
@@ -314,7 +320,7 @@
     
                     <label for="message">Message</label>
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    <button>Submit</button>
+                    <button class="button--primary">Get In Touch</button>
     
                 </form>
     
@@ -336,9 +342,6 @@
         </div>
     </div>
 
-    <div class="expirience">
-
-    </div>
 
 </body>
 

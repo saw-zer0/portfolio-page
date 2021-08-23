@@ -1,6 +1,5 @@
 .about{
     .about__container{
-        margin: 0 auto;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
@@ -18,14 +17,25 @@
             }
         }
 
-        @include tablet{
-            width: 60%;
-            flex-direction: row;
-            justify-content: space-between;
+        .about--right{
+            overflow: hidden;
 
-            .about--left{
-                width: 60%;
+            figure{
+                margin: 0 auto;
+
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+                
             }
+
+
+
+        }
+
+        @include tablet{
+            flex-direction: row;
         }
     }
 }

@@ -1,11 +1,11 @@
 button{
-    padding: 1em;
-    background-color: $accent-primary;
+    padding: .5em;
+    background-color: $dark;
+    border: 2px groove $accent-primary;
     color: $light;
-    border: none;
-    border-radius: 25px 10px 25px 10px;
+    border-radius: 20px;
     box-shadow: 2px 4px 2px 2px $dark;
     font-weight: 700;
-    font-family: sans-serif;
+    cursor: pointer;
 }
 

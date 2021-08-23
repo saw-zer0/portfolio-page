@@ -8,16 +8,13 @@
     z-index: 0;
     padding: 0.5em;
     height: 100vh;
-
-    // @include tablet{
-    //     height: 700px;
-    // }
+    max-width: 90%;
 
 
     header{
 
         @include tablet{
-            position: relative;
+            position: fixed;
             left: 10%;
         }
     }

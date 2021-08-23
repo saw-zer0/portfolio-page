@@ -3,8 +3,7 @@ form{
     flex-direction: column;
     font-size: 1.2em;
     padding: 1em;
-    margin: 1em;
-    // max-width: 450px;
+    max-width: 450px;
 
     label{
         margin: .3em;
@@ -22,12 +21,14 @@ form{
     }
 
     @include tablet{
-        width: 90%;
         max-width: 600px;
     }
 
     @include quadhd{
         max-width: 700px;
+    }
+    @include big-screen{
+        max-width: 1000px;
     }
 
 }
