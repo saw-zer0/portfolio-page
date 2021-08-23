@@ -26,6 +26,13 @@ body > * {
   }
 }
 
+.hover-state, button:hover, .portfolio-card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 2px 2px 0px 3px rgba(63, 63, 63, 0.4);
+          box-shadow: 2px 2px 0px 3px rgba(63, 63, 63, 0.4);
+}
+
 .heading {
   margin: 1em 0;
   text-align: center;
@@ -53,6 +60,8 @@ button {
           box-shadow: 2px 4px 2px 2px rgba(52, 61, 70, 0.4);
   font-weight: 700;
   cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .portfolio-card {
@@ -73,6 +82,8 @@ button {
   padding: 1em 0.5em;
   margin: 1em;
   border-radius: 10px;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 @media screen and (min-width: 768px) {
@@ -118,6 +129,10 @@ button {
   padding: 1em;
   margin: 1em;
   border-radius: 25px;
+  border-style: inset;
+  border-color: rgba(63, 63, 63, 0.4);
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .skill-wrapper figure {
@@ -133,6 +148,15 @@ button {
 
 .skill-wrapper figcaption {
   margin: 1em;
+}
+
+.skill-wrapper:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.soft-skill-icons {
+  font-size: 4em;
 }
 
 .home {
@@ -227,7 +251,10 @@ button {
 
 .about .about__container .about--right figure {
   margin: 0 auto;
+  border-radius: 50px;
+  overflow: hidden;
   width: 50%;
+  min-width: 180px;
 }
 
 .about .about__container .about--right figure img {
@@ -303,7 +330,7 @@ button {
             flex-direction: row;
   }
   .contact__container .contact__form {
-    width: 1000px;
+    width: 900px;
   }
 }
 
@@ -314,7 +341,12 @@ button {
   margin: 0 auto;
 }
 
+.contact__container .social-icon-container p {
+  font-size: 1.1em;
+}
+
 .contact__container .social-icon-container ul li {
+  display: block;
   padding: 1em;
   list-style: none;
 }
@@ -398,6 +430,8 @@ header .header__primary-nav ul li {
 header .header__primary-nav ul li a {
   color: #d4dce2;
   text-decoration: none;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 header .header__primary-nav ul li a:hover {
@@ -460,6 +494,9 @@ form label {
 
 form input, form #message {
   border-radius: 15px;
+  background-color: rgba(52, 61, 70, 0.4);
+  color: #d4dce2;
+  outline: none;
   padding: .3em;
   margin: .5em;
 }

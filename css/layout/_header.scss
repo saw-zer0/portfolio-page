@@ -59,6 +59,7 @@ header {
                 a {
                     color: $light;
                     text-decoration: none;
+                    transition: .2s;
                     &:hover{
                         border-bottom:  double;
                         border-width: 12px;

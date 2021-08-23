@@ -22,8 +22,10 @@
 
             figure{
                 margin: 0 auto;
-
+                border-radius: 50px;
+                overflow: hidden;
                 width: 50%;
+                min-width: 180px;
                 img{
                     width: 100%;
                 }

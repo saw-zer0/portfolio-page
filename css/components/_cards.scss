@@ -11,6 +11,7 @@
     padding: 1em 0.5em;
     margin: 1em;
     border-radius: 10px;
+    transition: .2s;
 
     @include tablet {
         &:nth-child(odd) {
@@ -31,6 +32,10 @@
     & > * {
         padding: 1em;
     }
+
+    &:hover{
+        @extend .hover-state;
+    }
 }
 
 //skill cards
@@ -42,7 +47,10 @@
     align-items: center;
     padding: 1em;
     margin: 1em;
-    border-radius: 25px;;
+    border-radius: 25px;
+    border-style: inset;
+    border-color: $gray;
+    transition: .2s;
 
     figure{
         width: 10vw;
@@ -58,4 +66,12 @@
     figcaption{
         margin: 1em;
     }
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.soft-skill-icons{
+    font-size: 4em;
 }

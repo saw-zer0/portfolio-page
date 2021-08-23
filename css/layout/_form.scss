@@ -11,6 +11,9 @@ form{
 
     input{
         border-radius: 15px;
+        background-color: $dark;
+        color: $light;
+        outline: none;
         padding: .3em;
         margin: .5em;
     }
