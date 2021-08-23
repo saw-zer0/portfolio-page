@@ -1,0 +1,13 @@
+.contact__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet{
+        flex-direction: row;
+
+        .contact__form{
+            width: 900px
+        }
+    }
+}

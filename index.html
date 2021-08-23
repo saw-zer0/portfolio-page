@@ -166,25 +166,32 @@
 
         <h4 class="heading">About</h4>
 
-        <section class="about__content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, aut ipsum, vitae sunt molestias qui
-            ipsa est at suscipit, quisquam corrupti aperiam voluptas. Optio dolore maiores vel, voluptate voluptatem
-            sequi!
-
-            <button class="button--primary">GET IN TOUCH</button>
-            <button class="button--default">RESUME</button>
-            
+        <section class="about__container">
+            <div class="about--left">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, aut ipsum, vitae sunt molestias qui
+                    ipsa est at suscipit, quisquam corrupti aperiam voluptas. Optio dolore maiores vel, voluptate voluptatem
+                    sequi!
+                </p>
+    
+                <button class="button--primary">GET IN TOUCH</button>
+                <button class="button--default">RESUME</button>
+                
+            </div>
+            <div class="about--right">
+                <figure>
+                    <img src="./assets/" alt="about__hero-image">
+                </figure>
+            </div>
+    
         </section>
 
-        <figure>
-            <img src="./assets/" alt="about__hero-image">
-        </figure>
 
-        <h2 class="heading">Technical Skills</h2>
+        <h2 class="heading">Skills</h2>
         <div class="skills">
-            
+
+            <h3 class="sub-heading">Technical</h3>
             <section class="technical-skill__container">
-    
                 <div class="skill-wrapper">
                     <figure>
                         <img src="" alt="python">
@@ -250,13 +257,40 @@
     
             </section>
     
+            <h3 class="sub-heading">Soft Skills</h3>
+
             <section class="soft-skill__container">
                 <ul>
-                    <li>Time management</li>
-                    <li>Organization</li>
-                    <li>Problem solving</li>
-                    <li>Adaptability</li>
-                    <li>Risk Management</li>
+                    <li>
+                        <figure>
+                            <img src="" alt="time icon">
+                        </figure>
+                        <figcaption>Time management</figcaption>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="" alt="organize icon">
+                        </figure>
+                        <figcaption>Organization</figcaption>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="" alt="solving icon">
+                        </figure>
+                        <figcaption>Problem Solving</figcaption>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="" alt="adapt icon">
+                        </figure>
+                        <figcaption>Adaptability</figcaption>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="" alt="risk manage icon">
+                        </figure>
+                        <figcaption>Risk Management</figcaption>
+                    </li>
                 </ul>
             </section>
     
@@ -267,38 +301,38 @@
     <div class="contact">
 
         <h4 class="heading">Contact</h4>
-
-        <section class="contact__form">
-
-            <form action="" method="post">
-
-                <label for="full-name">Full Name</label>
-                <input type="text" id="full-name" required placeholder="john doe">
-
-                <label for="email">Email</label>
-                <input type="email" id="email" required placeholder="your_name@something.com">
-
-                <label for="message">Message</label>
-                <input type="text" id="message" placeholder="place your query here">
-
-                <button>Submit</button>
-
-            </form>
-
-        </section>
-
-        <div class="social-icon-container">
-            <ul>
-                <li><a href="#">
-                        <img src="" alt="social contact icon">
-                    </a></li>
-                <li><a href="#">
-                        <img src="" alt="social contact icon">
-                    </a></li>
-                <li><a href="#">
-                        <img src="" alt="social contact icon">
-                    </a></li>
-            </ul>
+        <div class="contact__container">
+            <section class="contact__form">
+    
+                <form action="" >
+    
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" required placeholder="john doe">
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="your_name@something.com">
+    
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button>Submit</button>
+    
+                </form>
+    
+            </section>
+    
+            <div class="social-icon-container">
+                <ul>
+                    <li><a href="#">
+                            <img src="" alt="social contact icon">
+                        </a></li>
+                    <li><a href="#">
+                            <img src="" alt="social contact icon">
+                        </a></li>
+                    <li><a href="#">
+                            <img src="" alt="social contact icon">
+                        </a></li>
+                </ul>
+            </div>
         </div>
     </div>
 

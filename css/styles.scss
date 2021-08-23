@@ -9,6 +9,7 @@
 
 
 //components
+@import './components/heading';
 @import './components/buttons';
 @import './components/cards';
 
@@ -16,7 +17,10 @@
 //pages
 @import './pages/home';
 @import './pages/portfolio';
+@import './pages/about';
+@import './pages/contact';
 
 // layout
 @import './layout/header';
+@import './layout/form';
 

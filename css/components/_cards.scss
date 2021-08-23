@@ -3,23 +3,25 @@
 
 //portfolio cards
 .portfolio-card {
+    background-color: $dark;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 0.5em;
+    border-radius: 10px;
 
     &:nth-child(odd) {
         flex-direction: row;
 
         @include tablet {
-            margin: 0 auto 0 10vw;
+            margin: 1em auto 1em 10vw;
         }
     }
     &:nth-child(even) {
         flex-direction: row-reverse;
 
         @include tablet {
-            margin: 0 10vw 0 auto;
+            margin: 1em 10vw 1em auto;
         }
     }
 
@@ -34,25 +36,16 @@
 
 //skill cards
 
-.skills {
-    width: fit-content;
-    margin: 0 auto;
-    .technical-skill__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        .skill-wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            padding: 1em;
+.skill-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
 
-            & > * {
-                margin: 0.5em;
-            }
-        }
+    & > * {
+        margin: 0.5em;
     }
 }
+
+
