@@ -12,8 +12,10 @@
 
 
     header{
-
+        position: fixed;
+        min-width: 80%;
         @include tablet{
+            min-width: none;
             position: fixed;
             left: 10%;
         }

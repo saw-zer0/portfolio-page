@@ -196,8 +196,14 @@ button {
   max-width: 90%;
 }
 
+.home header {
+  position: fixed;
+  min-width: 80%;
+}
+
 @media screen and (min-width: 768px) {
   .home header {
+    min-width: none;
     position: fixed;
     left: 10%;
   }
