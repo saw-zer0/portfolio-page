@@ -11,6 +11,7 @@
 body {
     background-color: $black;
     color: $light;
+    transition: .1s;
 
     & > * {
         margin: 0 auto;

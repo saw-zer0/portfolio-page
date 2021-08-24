@@ -28,9 +28,13 @@
         }
         ul{
             li{
-                display: block;
+                display: inline-block;
                 padding: 1em;
                 list-style: none;
+
+                @include tablet{
+                    display: block;
+                }
             }
         }
     }

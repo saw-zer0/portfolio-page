@@ -12,6 +12,8 @@
 body {
   background-color: #090909;
   color: #d4dce2;
+  -webkit-transition: .1s;
+  transition: .1s;
 }
 
 body > * {
@@ -26,24 +28,29 @@ body > * {
   }
 }
 
-.hover-state, button:hover, .portfolio-card:hover {
+.hover-state, button:hover, .portfolio-card:hover, .skill-wrapper:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-box-shadow: 2px 2px 0px 3px rgba(63, 63, 63, 0.4);
-          box-shadow: 2px 2px 0px 3px rgba(63, 63, 63, 0.4);
+  -webkit-box-shadow: 2px 2px 0px 3px rgba(78, 78, 78, 0.4);
+          box-shadow: 2px 2px 0px 3px rgba(78, 78, 78, 0.4);
+}
+
+:root {
+  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .heading {
   margin: 1em 0;
   text-align: center;
-  font-size: 36px;
+  font-size: 2rem;
   border-bottom: 2px solid rgba(52, 61, 70, 0.4);
 }
 
 .sub-heading {
   margin: .5em;
   text-align: center;
-  font-size: 22;
+  font-size: 1.5rem;
   display: inline-block;
   border-style: hidden double double hidden;
   border-color: rgba(52, 61, 70, 0.4);
@@ -62,6 +69,7 @@ button {
   cursor: pointer;
   -webkit-transition: .2s;
   transition: .2s;
+  display: inline-block;
 }
 
 .portfolio-card {
@@ -115,7 +123,7 @@ button {
 }
 
 .skill-wrapper {
-  background-color: rgba(63, 63, 63, 0.4);
+  background-color: rgba(78, 78, 78, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,7 +138,7 @@ button {
   margin: 1em;
   border-radius: 25px;
   border-style: inset;
-  border-color: rgba(63, 63, 63, 0.4);
+  border-color: rgba(78, 78, 78, 0.4);
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -148,11 +156,6 @@ button {
 
 .skill-wrapper figcaption {
   margin: 1em;
-}
-
-.skill-wrapper:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .soft-skill-icons {
@@ -202,6 +205,7 @@ button {
 .home .hero .hero__container .hero__container--left h1 {
   text-align: right;
   font-size: 2rem;
+  font-family: 'Hina Mincho', serif;
   color: #99ca3c;
 }
 
@@ -243,6 +247,10 @@ button {
 
 .about .about__container .about--left * {
   margin: 1em;
+}
+
+.about .about__container .about--left form {
+  display: inline-block;
 }
 
 .about .about__container .about--right {
@@ -346,9 +354,15 @@ button {
 }
 
 .contact__container .social-icon-container ul li {
-  display: block;
+  display: inline-block;
   padding: 1em;
   list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__container .social-icon-container ul li {
+    display: block;
+  }
 }
 
 header {
@@ -416,8 +430,8 @@ header .header__primary-nav ul {
   text-align: right;
   height: 0px;
   overflow: hidden;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 header .header__primary-nav ul li {
@@ -499,6 +513,10 @@ form input, form #message {
   outline: none;
   padding: .3em;
   margin: .5em;
+}
+
+form button {
+  display: inline-block;
 }
 
 form #message {

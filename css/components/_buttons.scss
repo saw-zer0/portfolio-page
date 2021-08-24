@@ -8,9 +8,11 @@ button{
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
+    display: inline-block;
 
     &:hover{
         @extend .hover-state;
     }
+
 }
 

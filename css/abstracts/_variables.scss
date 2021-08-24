@@ -1,7 +1,7 @@
 //colors
 $black: #090909;
 $dark: rgba(52,61,70, 0.4);
-$gray: rgba(63, 63, 63, 0.4);
+$gray: rgba(78, 78, 78, 0.4);
 $dark-gradient: linear-gradient(to top, #09e485 0%, red 50%,#0291e3 100%);
 $light: #d4dce2;
 $accent-primary: #99ca3c;
@@ -13,3 +13,8 @@ $tablet: 768px;
 $laptop: 1024px;
 $qhd: 1440px;
 $big-screen: 2160px;
+
+
+//fonts
+$primary-font: 'Hina Mincho', serif;
+$secondary-font: 'Roboto Condensed', sans-serif;
