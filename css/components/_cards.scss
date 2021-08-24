@@ -36,6 +36,22 @@
     &:hover{
         @extend .hover-state;
     }
+
+    figure{
+        padding: 0em;
+        overflow: hidden;
+        border-radius: 35px;
+        object-fit: contain;
+        height: 200px;
+
+        img{
+            width: 100%;
+        }
+
+        @include tablet{
+            height: unset;
+        }
+    }
 }
 
 //skill cards
